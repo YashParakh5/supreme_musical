@@ -3,11 +3,20 @@
     <head>
         <link rel="stylesheet" href="style.css">   
         <title>Supreme Musical</title>
+        <script>
+            function openMenu(){
+                document.querySelector(".sidebar").classList.add("open");
+            }
+            function closeMenu(){
+                document.querySelector(".sidebar").classList.remove("open");
+            }
+        </script>
     </head>
     <body>
         <div class="grid-container">
             <header class="header">
                 <div class="brand">
+                    <button onclick="openMenu()">&#9776;</button>
                     <a href="index.html">Supreme Musical</a>
                 </div>
                 <div class="header-links">
@@ -15,19 +24,139 @@
                     <a href="signin.html">Sign In</a>
                 </div>
             </header>
-            <!--<aside>
-                Shopping
-            </aside>-->
-            <main class="main">
+            <aside class="sidebar">
+                <button onclick="closeMenu()">x</button>
                 <ul>
-                    <li>Product</li>
-                    <li>Product</li>
-                    <li>Product</li>
-                    <li>Product</li>
-                    <li>Product</li>
-                    <li>Product</li>
-                    <li>Product</li>
+                    <li>Guitar</li>
+                    <li>Guitar</li>
                 </ul>
+            </aside>
+            <main class="main">
+                <div class="content">
+                    <ul class="products">
+                        <li>
+                            <div class="product">
+                                <img src="images/a.jpg">
+                                <div class="product-name">
+                                    <a href="product.html">Guitar</a>
+                                </div>
+                                <div class="product-category">Strings</div>
+                                <div class="product-brand">XYZ</div>
+                                <div class="price">2500</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img src="images/a.jpg" alt="guitar">
+                                <div class="product-name">
+                                    <a href="product.html">Guitar</a>
+                                </div>
+                                <div class="product-category">Strings</div>
+                                <div class="product-brand">XYZ</div>
+                                <div class="price">2500</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img src="images/a.jpg">
+                                <div class="product-name">
+                                    <a href="product.html">Guitar</a>
+                                </div>
+                                <div class="product-category">Strings</div>
+                                <div class="product-brand">XYZ</div>
+                                <div class="price">2500</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img src="images/a.jpg">
+                                <div class="product-name">
+                                    <a href="product.html">Guitar</a>
+                                </div>
+                                <div class="product-category">Strings</div>
+                                <div class="product-brand">XYZ</div>
+                                <div class="price">2500</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img src="images/a.jpg">
+                                <div class="product-name">
+                                    <a href="product.html">Guitar</a>
+                                </div>
+                                <div class="product-category">Strings</div>
+                                <div class="product-brand">XYZ</div>
+                                <div class="price">2500</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img src="images/a.jpg">
+                                <div class="product-name">
+                                    <a href="product.html">Guitar</a>
+                                </div>
+                                <div class="product-category">Strings</div>
+                                <div class="product-brand">XYZ</div>
+                                <div class="price">2500</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img src="images/a.jpg">
+                                <div class="product-name">
+                                    <a href="product.html">Guitar</a>
+                                </div>
+                                <div class="product-category">Strings</div>
+                                <div class="product-brand">XYZ</div>
+                                <div class="price">2500</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img src="images/a.jpg">
+                                <div class="product-name">
+                                    <a href="product.html">Guitar</a>
+                                </div>
+                                <div class="product-category">Strings</div>
+                                <div class="product-brand">XYZ</div>
+                                <div class="price">2500</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img src="images/a.jpg">
+                                <div class="product-name">
+                                    <a href="product.html">Guitar</a>
+                                </div>
+                                <div class="product-category">Strings</div>
+                                <div class="product-brand">XYZ</div>
+                                <div class="price">2500</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img src="images/a.jpg">
+                                <div class="product-name">
+                                    <a href="product.html">Guitar</a>
+                                </div>
+                                <div class="product-category">Strings</div>
+                                <div class="product-brand">XYZ</div>
+                                <div class="price">2500</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img src="images/a.jpg">
+                                <div class="product-name">
+                                    <a href="product.html">Guitar</a>
+                                </div>
+                                <div class="product-category">Strings</div>
+                                <div class="product-brand">XYZ</div>
+                                <div class="price">2500</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </main>
             <footer class="footer">
                 Contact
