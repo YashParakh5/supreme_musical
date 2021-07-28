@@ -19,6 +19,7 @@
   "homepage": "https://github.com/YashParakh5/supreme_musical#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
     "mongoose": "^5.13.3"
   }
 }
