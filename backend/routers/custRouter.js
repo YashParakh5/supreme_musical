@@ -5,9 +5,9 @@ import Customer from'../models/custModel.js';
 
 const custRouter = express.Router();
 
-custRouter.get('/seed', expressAsyncHandler(async(req, res) =>{
-    //await Customer.remove({});
-    const createdCustomsers = await Customer.insertMany(data.customers);
+custRouter.get('/', expressAsyncHandler(async(req, res) =>{
+    await Customer.remove({});
+    const createdCustomers = await Customer.insertMany(data.customers);
     res.send({ createdCustomers });
 }));
 

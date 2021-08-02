@@ -10,7 +10,7 @@ const empSchema = new mongoose.Schema({
     state: {type: String, required: true},
     mobile: {type: String, required: true, unique: true, validate: /^\d{10}$/},
     email: {type: String, required: true, unique: true, validate: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/},
-    password: {type: String, required: true, validate:/^.{6,9}$/},
+    password: {type: String, required: true},
     },
     {
         timestamps: true,

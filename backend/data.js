@@ -1,3 +1,5 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
     products:[
         {
@@ -90,7 +92,7 @@ const data = {
             state:'UP',
             mobile:'0000000000',
             email:'ajayjain@gmail.com',
-            password:'aaaaaaa',
+            password: bcrypt.hashSync('abc@123',8),
         },
         {
             first_name:'Priya',
@@ -100,7 +102,7 @@ const data = {
             state:'MH',
             mobile:'1111111111',
             email:'priyapathak@gmail.com',
-            password:'aaaaaaa',
+            password: bcrypt.hashSync('abc@123',8),
         },
         {
             first_name:'Kabir',
@@ -110,7 +112,7 @@ const data = {
             state:'KA',
             mobile:'2222222222',
             email:'kabirgupta@gmail.com',
-            password:'aaaaaaa',
+            password: bcrypt.hashSync('abc@123',8),
         },
     ],
     employees: [
@@ -124,7 +126,7 @@ const data = {
             state:'RJ',
             mobile:'3333333333',
             email:'nainathakkar@gmail.com',
-            password:'aaaaaaa',
+            password: bcrypt.hashSync('abc@123',8),
         },
         {
             first_name:'Harsh',
@@ -136,7 +138,7 @@ const data = {
             state:'HR',
             mobile:'4444444444',
             email:'harshmeena@gmail.com',
-            password:'aaaaaaa',
+            password: bcrypt.hashSync('abc@123',8),
         },
     ],
 }

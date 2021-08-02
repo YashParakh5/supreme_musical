@@ -5,8 +5,8 @@ import Employee from '../models/empModel.js';
 
 const empRouter = express.Router();
 
-empRouter.get('/seed', expressAsyncHandler(async(req, res) =>{
-   //await Employee.remove({});
+empRouter.get('/', expressAsyncHandler(async(req, res) =>{
+   await Employee.remove({});
    const createdEmployees = await Employee.insertMany(data.employees);
    res.send({ createdEmployees });
 }));
